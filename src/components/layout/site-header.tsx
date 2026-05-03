@@ -1,3 +1,4 @@
+import { ConnectWalletButton } from "@/components/wallet/connect-wallet-button";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -23,7 +24,7 @@ export function SiteHeader() {
             ))}
           </nav>
         </div>
-        <Button variant="primary">Connect Wallet</Button>
+        <ConnectWalletButton />
       </div>
     </header>
   );
