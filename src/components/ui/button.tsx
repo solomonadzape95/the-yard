@@ -13,6 +13,7 @@ interface ButtonAsButton extends SharedProps {
   href?: never;
   type?: "button" | "submit" | "reset";
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  disabled?: boolean;
 }
 
 interface ButtonAsLink extends SharedProps {
@@ -42,11 +43,13 @@ export function Button(props: ButtonProps) {
     );
   }
 
+  const buttonProps = props as ButtonAsButton;
   return (
     <button
-      type={props.type ?? "button"}
+      type={buttonProps.type ?? "button"}
       className={classes}
-      onClick={props.onClick}
+      onClick={buttonProps.onClick}
+      disabled={buttonProps.disabled}
     >
       {children}
     </button>
