@@ -27,7 +27,7 @@ export const MOCK_LISTINGS: AgentListing[] = [
     salePriceUsdc: 560,
     rentalPricePerDayUsdc: 35,
     online: true,
-    owner: "0xA27C...1f90",
+    owner: "0xa27Ce822c695e1a9577c010f80c8732E7bbf0659",
     lastAction: "Swapped 120 USDC -> ETH",
   },
   {
@@ -41,7 +41,7 @@ export const MOCK_LISTINGS: AgentListing[] = [
     salePriceUsdc: 430,
     rentalPricePerDayUsdc: 25,
     online: false,
-    owner: "0x92F1...aC11",
+    owner: "0x92F114117Cf6703450a974722827E545111aC113",
     lastAction: "Rebalanced stable vault",
   },
   {
@@ -55,7 +55,7 @@ export const MOCK_LISTINGS: AgentListing[] = [
     salePriceUsdc: 610,
     rentalPricePerDayUsdc: 40,
     online: true,
-    owner: "0x72f2...ff00",
+    owner: "0x72F211030cf6bDd200F43e46D6A2f6D17D29FF00",
     lastAction: "Published trend memo",
   },
 ];
